@@ -20,13 +20,13 @@ class SolutionTab {
         }
          dp[i] = currSum;
     }
-        return Math.max(dp[arr.length-1], dp[arr.length-2]);
+        return dp[arr.length-1];
     }
 }
 class MainClassTab{
     public static void main(String[] args){
         SolutionTab obj = new SolutionTab();
-        int[] arr = {468 ,35, 1, 170, 225, 479, 359, 463, 465, 206, 146, 282, 328, 462, 492, 496, 443, 328, 437, 392, 105, 403, 154, 293, 383, 422, 217, 219, 396, 448, 227, 272, 39, 370, 413, 168, 300, 36, 395, 204, 312, 323,};
+        int[] arr = { 10,1,1,10};
         System.out.println(obj.findMaxSum(arr, arr.length));
     }
 }
